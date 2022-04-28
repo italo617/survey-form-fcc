@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Programming Languages Survey From</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">Programming Languages Survey Form</h1>
+        <p id="description">Let us know the use of programming languages in the world currently!</p>
+        <form id="survey-form" action="#" method="post">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+            <label id="email-label" for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="Your e-mail" required>
+
+            <label for="dropdown">Where do you live?</label>
+            <select id="dropdown" name="continent">
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="Oceania">Oceania</option>
+                <option value="South America">South America</option>
+            </select>
+
+            <label id="number-label" for="number">For how many years did you program?</label>
+            <input id="number" name="programming-years" type="number"
+                placeholder="Number of years you program" min="0" max="100" required>
+
+            <div role="group" class="control" aria-label="Type">
+                <p>Do you work as a programmer currently?</p>
+                <label for="radio-programming-yes"><input id="radio-programming-yes" name="programming-work"
+                        type="radio" value="Yes" required>Yes</label>
+                <label for="radio-programming-no"><input id="radio-programming-no" name="programming-work" type="radio"
+                        value="No">No</label>
+            </div>
+
+            <fieldset>
+                <legend>Of the languages below, in which did you program for more than 6 months?</legend>
+                <label for="check-c"><input id="check-c" name="programming-languages" type="checkbox"
+                        value="C">C</label>
+                <label for="check-cplusplus"><input id="check-cplusplus" name="programming-languages" type="checkbox"
+                        value="C++">C++</label>
+                <label for="check-csharp"><input id="check-csharp" name="programming-languages" type="checkbox"
+                        value="C#">C#</label>
+                <label for="check-delphi"><input id="check-delphi" name="programming-languages" type="checkbox"
+                        value="Delphi">Delphi</label>
+                <label for="check-go"><input id="check-go" name="programming-languages" type="checkbox"
+                        value="Go">Go</label>
+                <label for="check-java"><input id="check-java" name="programming-languages" type="checkbox"
+                        value="Java">Java</label>
+                <label for="check-javascript"><input id="check-javascript" name="programming-languages" type="checkbox"
+                        value="JavaScript">JavaScript</label>
+                <label for="check-lua"><input id="check-lua" name="programming-languages" type="checkbox"
+                        value="Lua">Lua</label>
+                <label for="check-objectivec"><input id="check-objectivec" name="programming-languages" type="checkbox"
+                        value="Objective-C">Objective-C</label>
+                <label for="check-perl"><input id="check-perl" name="programming-languages" type="checkbox"
+                        value="Perl">Perl</label>
+                <label for="check-php"><input id="check-php" name="programming-languages" type="checkbox"
+                        value="PHP">PHP</label>
+                <label for="check-python"><input id="check-python" name="programming-languages" type="checkbox"
+                        value="Python">Python</label>
+                <label for="check-r"><input id="check-r" name="programming-languages" type="checkbox"
+                        value="R">R</label>
+                <label for="check-ruby"><input id="check-ruby" name="programming-languages" type="checkbox"
+                        value="Ruby">Ruby</label>
+                <label for="check-swift"><input id="check-swift" name="programming-languages" type="checkbox"
+                        value="Swift">Swift</label>
+                <label for="check-visualbasic"><input id="check-visualbasic" name="programming-languages"
+                        type="checkbox" value="Visual Basic">Visual Basic</label>
+            </fieldset>
+
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea placeholder="Your comments or suggestions here"></textarea>
+
+            <button id="submit">Submit</button>
+        </form>
+
+        <p>A design project from <a href="https://www.freecodecamp.org" target="_blank" rel="noopener">Free Code Camp</a>. Made by <a href="https://github.com/italo617" target="_blank" rel="noopener">italo617</a>.</p>
+
+    </main>
+</body>
+
+</html>
